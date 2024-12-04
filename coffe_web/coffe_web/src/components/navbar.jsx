@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
+import coffe from "../assets/download.jpeg";
 import Button from "../layouts/Button";
 import { Link } from "react-scroll";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -10,9 +11,9 @@ function Navbar() {
     setMenu(!menu);
     console.log(menu);
   };
-  const closeMenu = () =>{
+  const closeMenu = () => {
     setMenu(false);
-  }
+  };
 
   return (
     <div className="">
@@ -20,18 +21,17 @@ function Navbar() {
         <div className=" flex flex-row justify-between p-5  px-5 lg:px-32 bg-slate-50 py-7 shadow-md">
           <div className="flex flex-row items-center gap-2  cursor-pointer ">
             <span>
-              <img src={logo} alt="logo" className="w-5 h-5  rounded-full" />
+              <img src={coffe} alt="logo" className="w-12 h-12 rounded-full " />
             </span>
             <h1 className="text-2xl font-semibold">coffe</h1>
           </div>
-          <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
+          <nav className=" hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="home"
               spy={true}
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              
             >
               Home
             </Link>
@@ -87,8 +87,8 @@ function Navbar() {
           <div
             className={`${
               menu ? "translate-x-0" : "-translate-x-full"
-            } md:hidden flex flex-col absolute bg-black
-            text-white left-0 top-24 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+            } md:hidden flex flex-col absolute text-white bg-black 
+             left-0 top-24 font-semibold text-3xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
           >
             <Link
               to="home"
@@ -96,7 +96,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               Home
             </Link>
@@ -106,8 +106,8 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              onClick={closeMenu} 
-           >
+              onClick={closeMenu}
+            >
               Menu
             </Link>
 
@@ -117,8 +117,8 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              onClick={closeMenu} 
-             >
+              onClick={closeMenu}
+            >
               About Us
             </Link>
             <Link
@@ -127,7 +127,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               Products
             </Link>
@@ -138,7 +138,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               className="group relative inline-block hover:text-amber-600 cursor-pointer hover:underline"
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               Reviews
             </Link>
@@ -152,4 +152,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
