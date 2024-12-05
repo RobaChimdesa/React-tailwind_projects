@@ -87,8 +87,8 @@ function Navbar() {
           <div
             className={`${
               menu ? "translate-x-0" : "-translate-x-full"
-            } md:hidden flex flex-col absolute text-white bg-black 
-             left-0 top-24 font-semibold text-3xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+            } md:hidden flex flex-col absolute  bg-slate-50
+             left-0 top-24 font-semibold text-xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
           >
             <Link
               to="home"
