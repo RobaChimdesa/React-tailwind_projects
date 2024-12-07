@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuCard = (props) => {
   return (
-    <div className="bg-white mt-5 mb-5 gap-1 md:ml-8 mr-8 p-8 border border-gray-300 rounded-lg shadow-lg  transition-transform transform hover:scale-105">
+    <div className="bg-white my-5  gap-1 md:ml-8 mr-8 p-8 border  rounded-lg shadow-lg  transition-transform transform hover:scale-105">
       
       <img src={props.imge} alt="what" className="  rounded-lg mb-4" />
       <h2 className="text-xl md:text-2xl font-bold md: mb-4">{props.title}</h2>

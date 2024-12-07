@@ -7,11 +7,12 @@ import Menu from "./components/Menu";
 import About from "./components/About";
 import Products from "./components/Products";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="bg-gray-200">
       <Navbar />
       <main>
         <div id="home">
@@ -31,6 +32,7 @@ function App() {
         </div>
 
       </main>
+      <Footer />
     </div>
   );
 }

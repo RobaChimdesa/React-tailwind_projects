@@ -26,7 +26,7 @@ const Home = () => {
           perspiciatis quis quisquam. At, inventore. Nam, soluta doloribus! Ex
           ut odit totam et explicabo recusandae hic!
         </p>
-        <div className="flex space-x-4 ml-24">
+        <div className="flex space-x-4 ml-4 md:ml-24">
           <Button title="ADD TO CART" /> 
           <Button title="MORE MENU" />
         </div>
