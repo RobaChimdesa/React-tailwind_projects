@@ -6,10 +6,12 @@ import { Link } from "react-scroll";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate } from "react-router-dom";
+import Signin from "./Signin";
 
 const NavbarForAllUser = () => {
   // const navigate = useNavigate()
   const [menu, setMenu] = useState(false);
+  
   const handleMenu = () => {
     setMenu(!menu);
     console.log(menu);
@@ -20,6 +22,9 @@ const NavbarForAllUser = () => {
 const handlelogin = () =>{
   // navigate("/signin");
 }
+
+
+
 
   return (
     <div className="">
@@ -53,8 +58,11 @@ const handlelogin = () =>{
             </Link>
           </nav>
           <div className="hidden lg:flex">
-            <a href="/signin"><Button title="Sign in"  /></a>
+
+            <a href="/signin">  <Button title="Sign in"  /></a>
+          
           </div>
+        
           <div className="flex md:hidden items-center">
             {menu ? (
               <CloseIcon onClick={handleMenu} />
@@ -62,6 +70,7 @@ const handlelogin = () =>{
               <MenuIcon onClick={handleMenu} />
             )}
           </div>
+          
           <div
             className={`${
               menu ? "translate-x-0" : "-translate-x-full"

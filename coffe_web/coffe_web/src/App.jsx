@@ -20,7 +20,7 @@ function App() {
       
       <Router>
       <Routes>
-         <Route path="/" element={<PageForAll/>}/>
+        <Route path="/" element={<PageForAll/>}/>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<UserDashborad/>} />
         <Route path="/signin" element={<Signin />} />

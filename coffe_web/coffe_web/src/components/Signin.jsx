@@ -1,6 +1,8 @@
 import React ,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import Button from '../layouts/Button';
+import NavbarForAllUser from './NavbarForAllUser';
+import Footer from './Footer';
 
 const Signin = () => {
 
@@ -16,6 +18,8 @@ const Signin = () => {
     };
 
   return (
+    <div>
+     <NavbarForAllUser/>
     <div className="bg-white shadow-lg justify-center rounded-lg flex flex-col my-32 mx-4 md:ml-80 p-10 md:w-2/6">
     <form action="" className="space-y-6 w-full" onSubmit={handleSubmit}>
       <div className="text-center">
@@ -53,6 +57,8 @@ const Signin = () => {
         </p>
     </form>
   </div>
+  <Footer/>
+    </div>
   )
 }
 

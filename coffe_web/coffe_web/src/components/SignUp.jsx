@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { use } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../layouts/Button";
-
+import NavbarForAllUser from "./NavbarForAllUser";
+import Footer from "./Footer";
 const SignUp = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,8 +18,9 @@ const SignUp = () => {
   };
   return (
     
-
-    <div className="bg-white justify-center shadow-lg rounded-lg flex flex-col my-32 mx-4 md:ml-80 p-10 md:w-2/6">
+<div>
+  <NavbarForAllUser/>
+<div className="bg-white justify-center shadow-lg rounded-lg flex flex-col my-32 mx-4 md:ml-80 p-10 md:w-2/6">
       <form action="" className="space-y-6 w-full" onSubmit={handleSubmit}>
         <div className="text-center">
           <h1 className="text-orange-800 font-semibold text-3xl">Signup Page</h1>
@@ -71,6 +73,9 @@ const SignUp = () => {
         </p>
       </form>
     </div>
+    <Footer/>
+</div>
+    
   );
 };
 
