@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">  
           <div>  
             <h3 className="font-bold text-xl mb-2">Company Name</h3>  
-            <p className="text-gray-400">Address: 123 Main St, City, Country</p>  
-            <p className="text-gray-400">Email: info@company.com</p>  
-            <p className="text-gray-400">Phone: (123) 456-7890</p>  
+            <p className="text-gray-400">Address: 123 Main St, Adama, Ethiopia</p>  
+            <p className="text-gray-400">Email: robachimdesa123@gmail.com</p>  
+            <p className="text-gray-400">Phone: +251983626772</p>  
           </div>  
           <div>  
             <h3 className="font-bold text-xl mb-2">Links</h3>  
