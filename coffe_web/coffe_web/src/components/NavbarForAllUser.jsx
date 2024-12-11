@@ -9,9 +9,11 @@ import { useNavigate } from "react-router-dom";
 import Signin from "./Signin";
 
 
+
 const NavbarForAllUser = () => {
   // const navigate = useNavigate()
   const [menu, setMenu] = useState(false);
+  const [showLogn,setShowLogin] = useState(false)
   
   
   const handleMenu = () => {
@@ -21,6 +23,14 @@ const NavbarForAllUser = () => {
   const closeMenu = () => {
     setMenu(false);
   };
+
+  const handleshowLogin = () =>{
+    setShowLogin(true)
+  }
+
+  const handleCloselogin = ()=>{
+    setShowLogin(false)
+  }
 
 
 
@@ -59,10 +69,12 @@ const NavbarForAllUser = () => {
             >
               About Us
             </Link>
+            {/* {showLogn && (< Signin onClose={handleCloselogin} />)} */}
           </nav>
           <div className="hidden lg:flex">
 
             <a href="/signin">  <Button title="Sign in"  /></a>
+            {/* <button onClick={handleshowLogin}>signin</button> */}
             
           </div>
         
