@@ -66,7 +66,7 @@ const SignUp = () => {
         </div>
 
         <div className="flex justify-center mt-4">
-         <button type="submit"> <Button title="Sign Up"  /></button>
+        <Button title="Sign Up"  type="submit" />
         </div>
         <p className="mt-4 text-center">
           Already have an account? <a href="/signin" className="text-blue-500">Sign In</a>

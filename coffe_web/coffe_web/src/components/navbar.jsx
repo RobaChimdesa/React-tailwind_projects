@@ -75,7 +75,8 @@ function Navbar() {
             </Link>
           </nav>
           <div className="hidden lg:flex">
-            <Button title="Login" />
+            <a href="/"> <Button title="Sign Out" /></a>
+           
           </div>
           <div className="flex md:hidden items-center">
             {menu ? (
@@ -143,7 +144,7 @@ function Navbar() {
               Reviews
             </Link>
 
-            <Button title="Login" />
+            <a href="/"> <Button title="Sign Out" /></a>
           </div>
         </div>
       </div>
