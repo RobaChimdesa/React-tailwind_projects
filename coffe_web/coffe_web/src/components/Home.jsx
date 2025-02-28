@@ -1,3 +1,4 @@
+// home page
 import React from "react";
 import Button from "../layouts/Button";
 import home from "../assets/home.jpg"; // You can keep this for reference if needed

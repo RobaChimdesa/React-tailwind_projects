@@ -1,3 +1,5 @@
+// this is login page 
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../layouts/Button";
@@ -75,6 +77,7 @@ const Signin = () => {
           </button>
         </a>
       </div>
+
       <Footer />
     </div>
   );
